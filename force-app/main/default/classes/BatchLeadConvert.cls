@@ -1,3 +1,4 @@
+//comment added
 public with sharing class BatchLeadConvert implements Database.Batchable<SObject>, Database.RaisesPlatformEvents{ 
 
     private final String CONVERTED_STATUS = [SELECT Id, MasterLabel FROM LeadStatus WHERE IsConverted=true LIMIT 1].MasterLabel;
